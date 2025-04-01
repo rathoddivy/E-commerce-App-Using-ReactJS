@@ -1,0 +1,19 @@
+/* Breadcrumb Navigation */
+.breadcrum {
+    width: 100%;
+    position: relative;
+    top: 80px;
+    left: 95px;
+    padding: 15px 30px;
+
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+

@@ -1,0 +1,142 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100vw;  /* Full screen width */
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+/* Left Side */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px; /* Reduce large padding */
+    line-height: 1.1;
+    max-width: 50%;
+}
+
+/* Subtitle */
+.hero-left h2 {
+    color: #090909;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Main Heading */
+.hero-left p {
+    color: #171717;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Hand Icon */
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-hand-icon img {
+    width: 60px;
+}
+
+/* Latest Collection Button */
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 65, 65, 0.4);
+}
+
+.hero-latest-btn:active {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Right Side Image */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    max-width: 75%;
+    height:auto;
+    position: relative;
+    top: 30px; left: 100px;
+    object-fit: cover;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .hero-left p {
+        font-size: 50px;
+    }
+
+    .hero-right {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-latest-btn {
+        font-size: 18px;
+        width: 220px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-left h2 {
+        font-size: 16px;
+    }
+
+    .hero-left p {
+        font-size: 35px;
+    }
+
+    .hero-latest-btn {
+        font-size: 16px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .hero-hand-icon img {
+        width: 35px;
+    }
+}

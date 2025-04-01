@@ -1,0 +1,144 @@
+/* Improved NavBar.css */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 98.5%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 40px;
+}
+
+.nav-logo p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #171717;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #626262;
+    margin-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li Link:hover {
+    color: #ff4141;
+}
+
+.nav-menu hr{
+   
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+    width: 45px;
+    height: 2px;
+    margin: 2px;
+    background: red;
+    color: red;
+    border: 0px solid red;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  
+    
+}
+
+
+
+
+.nav-menu hr::after {
+    width: 100%;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-login-cart button {
+    padding: 10px 20px;
+    border: 2px solid #171717;
+    border-radius: 50px;
+    background: transparent;
+    color: #171717;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-login-cart button:active {
+    background: #171717;
+    color: #fff;
+}
+
+.nav-login-cart img {
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-cart-count{
+    width: 19px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -45px;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    background: red;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-login-cart {
+        gap: 20px;
+    }
+}

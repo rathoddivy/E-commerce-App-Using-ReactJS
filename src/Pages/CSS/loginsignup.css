@@ -1,0 +1,138 @@
+/* General Styling */
+.loginsignup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    background: linear-gradient(135deg, #fce3fe, #e2e8f0);
+  }
+  
+  .loginsignup-container {
+  
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 470px;
+    height: 450px;
+
+  }
+  
+  .loginsignup-container h1 {
+    margin: 20px 0px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+   
+  }
+  
+  /* Input Fields */
+  .loginsignup-fields {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .loginsignup-fields input {
+    width: 120%;
+    height: 50px;
+outline: none;
+    padding-left:20px;
+    font-size: 18px;
+    color: #5c5c5c;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .loginsignup-fields input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Button */
+ .loginsignup-container button {
+    width: 450px;
+    position: relative;
+    left: -9px;
+    height: 60px;
+    background: #ff4141;
+    margin-top: 30px;
+    color: white;
+    padding: 12px;
+    font-size: 24px;
+font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Login Text */
+ .loginsignup-login {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    position: relative;
+    right: 94px;
+    top: 10px;
+    color: #555;
+  }
+  
+  .loginsignup-login span {
+    color: #f10606;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .loginsignup-login span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Checkbox & Privacy Policy */
+  .loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .loginsignup-agree input {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .loginsignup-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .loginsignup-fields input {
+      padding: 10px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+  }
+  
